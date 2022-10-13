@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --pinkcolor:#97477C;
+  --bluecolor:#4895BF;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .Logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--pinkcolor);
+  font-size: 1.2em;
+}
+
+.navbar .Logo span {
+  color: var(--bluecolor);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobilemenu {
+  cursor: pointer;
+}
+
+a {
+  color: #444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em;
+}
+
+.Hero {
+  text-align: center;
+}
+
+.left-div .lefthead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+.left-div h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.left-div .left-cta {
+  background: var(--bluecolor);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.left-div .right-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.Heroimage {
+  width: 70%;
+  margin-top: 3em;
+}
+
+section.featuressection {
+  background: #1E1C43;
+  color: white;
+}
+
+ul.flist {
+  margin: 0;
+  padding-left: .1em;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.flist li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.flist li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/bullet.svg);
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.featuressection img {
+  display: none;
+}
+
+.testpara {
+  background: #295095;
+  color: white;
+}
+
+.testpara ul li {
+  background: var(--bluecolor);
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testpara ul li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #1E1C43;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.send-message {
+  background: var(--bluecolor);
+  color: white;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  display: inline-block;
+  padding: .8em 2em;
+  margin-bottom: 5em;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #1E1C43;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.left-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobileexit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilemenu, .mobileexit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 120px auto;
+        grid-template-columns: 120px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.left-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.contacta a {
+    color: var(--bluecolor);
+    border: 3px solid var(--bluecolor);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav li.contacta a:hover {
+    background: var(--bluecolor);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .Hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .Hero .container .left-div {
+    margin: 3em 3em 0 5em;
+  }
+  .Hero .container .left-div h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .Heroimage {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .Hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left-cta {
+    margin-right: 1em;
+  }
+  ul.flist {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.flist li {
+    font-size: 1.4em;
+  }
+  ul.flist li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .featuressection {
+    position: relative;
+  }
+  .featuressection img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testpara ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testpara ul li {
+    margin: 0 1em;
+  }
+  .contact {
+    position: relative;
+  }
+  .contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

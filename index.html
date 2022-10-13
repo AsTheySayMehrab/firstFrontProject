@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Number 1 </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="Logo" href="#">First<span>Project</span></a>
+            <img id="mobilecta" class="mobilemenu" src="images/menu.svg" alt="open the menu">
+            
+            <nav>
+                <img id="mobileexit" class="mobileexit" src="images/exit.svg" alt="exit the menu">
+                <ul class="left-nav">
+                    <li class="Current"><a href="#">Home</a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li class="contacta"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+     <section class="Hero">
+        <div class="container">
+            <div class="left-div">
+                <p class="lefthead"> Its October's First Project </p>
+                <h1>It Was Fun To Create New Things</h1>
+                <div class="Hero-cta">
+                    <a href="#" class="left-cta">Left</a>
+                    <a href="#" class="right-cta">Right</a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" class="Heroimage" alt="illustration">
+        </div>
+     </section>
+     <section class="featuressection">
+        <div class="container">
+            <ul class="flist">
+                <li>What We Learn In This Project</li>
+                <li>HTML</li>
+                <li>Css And sass</li>
+                <li>A little bit of JS</li>
+                <li>Having fun practicing</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="man holding">
+        </div>
+     </section>
+     <section class="testpara">
+        <div class="container">
+            <ul >
+                <li>
+                    <img src="images/me.jpg" alt="person profile">
+                    <blockquote>it was fun practicing the things i used to learn, it was like
+                        kinda a game for me.
+                    </blockquote>
+                    <cite>- Mehrab Mahmoudifar</cite>
+                </li>
+                <li>
+                    <img src="images/me.jpg" alt="person profile">
+                    <blockquote>Having a goal in life is great , 
+                        now you can see how beautifull life is.
+                    </blockquote>
+                    <cite>- Mehrab Mahmoudifar</cite>
+                </li>
+                <li>
+                    <img src="images/me.jpg" alt="person profile">
+                    <blockquote>Love is all about passion and not about 
+                        the blaze we think.
+                    </blockquote>
+                    <cite>- Mehrab Mahmoudifar</cite>
+                </li>
+            </ul>
+        </div>
+     </section>
+     <section class="contact">
+        <div class="container">
+            <div class="contactleft">
+                <h2>contact</h2>
+                <form action="">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" name="Name2" placeholder="your name">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="your email">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="your message "></textarea>
+                    <input type="submit" class="send-message" value="send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414693.2123787499!2d50.7732947831495!3d35.70676726520499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2sde!4v1665444673968!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+     </section>
+
+
+     <script>
+        const mobileBtn = document.getElementById('mobilecta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobileexit');
+        mobileBtn.addEventListener('click', () => {
+           nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+           nav.classList.remove('menu-btn');
+        })
+
+     </script>
+</body>
+</html>
